@@ -1,0 +1,63 @@
+.body-container {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 5px;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: 600px 400px;
+    background-image: url("/image/MDIS_singapore.jpg");
+
+    &__left {
+        width: 450px;
+        height: 80px;
+        margin-top: 10px;
+        padding: 10px 5px;
+        position: relative;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        margin-left: 10px;
+        background-color: rgb(56, 128, 201); 
+
+        &::before {
+            content: "";
+            width: 0;
+            height: 0;
+            top: 0;
+            right: 100%;
+            position: absolute;
+            transform: translateX(50%);
+            border-top: 10px solid rgb(56, 128, 201);
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid transparent;
+        }
+    }
+
+    &__left:nth-child(even) {
+        position: relative;
+        left: 130px;
+
+        &::after {
+            content: "";
+            content: "";
+            width: 0;
+            height: 0;
+            bottom: 0;
+            left: 100%;
+            position: absolute;
+            transform: translateX(-50%);
+            border-bottom: 10px solid rgb(56, 128, 201);
+            border-right: 10px solid transparent;
+            border-top: 10px solid transparent;
+            border-left: 10px solid transparent;
+        }
+    }
+
+    &__text {
+        width: 450px;
+        height: 80px;
+        color: #ffffff;
+    }
+}

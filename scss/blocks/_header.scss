@@ -1,0 +1,40 @@
+.header {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    margin: 0 auto;
+    padding: 0 5px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    background-color: #ffffff;
+    justify-content: space-between;
+
+    &__image {
+        width: 45px;
+        height: 45px;
+        border: 0;
+    }
+
+    &__img {
+        width: 45px;
+        height: 45px;
+        border: 0;
+        border-radius: 50%;
+    }
+
+    &__heading {
+        width: 50px;
+        font-weight: 700;
+        color: #333333;
+    }
+
+    &__search {
+        width: 30px;
+        height: 30px;
+    }
+
+    &__child {
+        margin-bottom: 5px;
+    }
+}
